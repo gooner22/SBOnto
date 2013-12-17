@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#"
+     xml:base="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto">
+        <rdfs:comment>SBOnto - is describing snowboards</rdfs:comment>
+        <owl:versionIRI rdf:resource="SBOnto"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Product#manufacturer -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/Product#manufacturer"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Product#flex/stiffness -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/Product#flex/stiffness"/>
+    
+
+
+    <!-- http://schema.org/Product#length -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/Product#length"/>
+    
+
+
+    <!-- http://schema.org/Product#sidecut -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/Product#sidecut">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Product#Freeride -->
+
+    <owl:Class rdf:about="http://schema.org/Product#Freeride">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Snowboard"/>
+        <rdfs:comment>Free riding is a general term for all-around snowboarding. &quot;Free riding&quot; began as a marketing-derived term from the snowboarding industry, but it still has descriptive value. It communicates the concept of dynamically altering snowboarding styles on a continuous basis such that the combination becomes a style unto itself
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Product#Freestyle -->
+
+    <owl:Class rdf:about="http://schema.org/Product#Freestyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Snowboard"/>
+        <rdfs:comment>Freestyle snowboarding is any riding that includes performing tricks. In freestyle, the rider utilizes natural and man-made features such as rails, jumps, boxes, logs, rocks, and innumerable others to perform tricks. It is a popular all-inclusive concept that distinguishes the creative aspects of snowboarding, in contrast to a style like alpine snowboarding.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Manufacturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Manufacturer"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Snowboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Snowboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Product#Capita -->
+
+    <owl:NamedIndividual rdf:about="http://schema.org/Product#Capita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.org/Product#DC -->
+
+    <owl:NamedIndividual rdf:about="http://schema.org/Product#DC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://schema.org/Product#K2 -->
+
+    <owl:NamedIndividual rdf:about="http://schema.org/Product#K2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Bataleon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Bataleon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Manufacturer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Goliath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/maks/ontologies/2013/11/sbonto#Goliath">
+        <rdf:type rdf:resource="http://schema.org/Product#Freestyle"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
